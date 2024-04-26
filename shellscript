@@ -1,0 +1,8 @@
+# Build the Docker image with the tag "test"
+docker build -t test:v1.1 -f Dockerfile .
+#ddocker login
+docker login -u ram1808 -p Dell@igtr1808
+# Tag the Docker image with the repository name and tag
+docker tag test:v1.1 ram1808/dockerjenkins:v1.1 
+# Push the tagged Docker image to the Docker repository
+docker push ram1808/dockerjenkins:v1.1
