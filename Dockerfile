@@ -1,5 +1,2 @@
-# Use the official httpd image as the base image
-FROM httpd:latest
-
-# Expose port 80 to allow incoming HTTP traffic
-EXPOSE 80
+FROM docker.io/httpd
+RUN echo "Unnati Development Training Center Pvt. Ltd." > /usr/local/apache2/htdocs/index.html
